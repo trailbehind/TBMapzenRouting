@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		884C2B711D411E6A003E29FA /* TBMapzenRoutingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B661D411E6A003E29FA /* TBMapzenRoutingController.m */; };
+		884C2B721D411E6B003E29FA /* TBMapzenRoutingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B681D411E6A003E29FA /* TBMapzenRoutingPoint.m */; };
+		884C2B731D411E6B003E29FA /* TBMapzenRoutingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B6A1D411E6A003E29FA /* TBMapzenRoutingResult.m */; };
+		884C2B741D411E6B003E29FA /* TBMapzenRoutingResultLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B6C1D411E6A003E29FA /* TBMapzenRoutingResultLeg.m */; };
+		884C2B751D411E6B003E29FA /* TBMapzenRoutingResultManeuver.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B6E1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.m */; };
+		884C2B761D411E6B003E29FA /* TBMapzenRoutingTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B701D411E6A003E29FA /* TBMapzenRoutingTypes.m */; };
+		884C2B781D411EFA003E29FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 884C2B771D411EFA003E29FA /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		884C2B561D411E48003E29FA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		884C2B581D411E48003E29FA /* libTBMapzenRouting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTBMapzenRouting.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		884C2B641D411E6A003E29FA /* TBMapzenRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRouting.h; sourceTree = "<group>"; };
+		884C2B651D411E6A003E29FA /* TBMapzenRoutingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingController.h; sourceTree = "<group>"; };
+		884C2B661D411E6A003E29FA /* TBMapzenRoutingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingController.m; sourceTree = "<group>"; };
+		884C2B671D411E6A003E29FA /* TBMapzenRoutingPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingPoint.h; sourceTree = "<group>"; };
+		884C2B681D411E6A003E29FA /* TBMapzenRoutingPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingPoint.m; sourceTree = "<group>"; };
+		884C2B691D411E6A003E29FA /* TBMapzenRoutingResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingResult.h; sourceTree = "<group>"; };
+		884C2B6A1D411E6A003E29FA /* TBMapzenRoutingResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingResult.m; sourceTree = "<group>"; };
+		884C2B6B1D411E6A003E29FA /* TBMapzenRoutingResultLeg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingResultLeg.h; sourceTree = "<group>"; };
+		884C2B6C1D411E6A003E29FA /* TBMapzenRoutingResultLeg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingResultLeg.m; sourceTree = "<group>"; };
+		884C2B6D1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingResultManeuver.h; sourceTree = "<group>"; };
+		884C2B6E1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingResultManeuver.m; sourceTree = "<group>"; };
+		884C2B6F1D411E6A003E29FA /* TBMapzenRoutingTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingTypes.h; sourceTree = "<group>"; };
+		884C2B701D411E6A003E29FA /* TBMapzenRoutingTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingTypes.m; sourceTree = "<group>"; };
+		884C2B771D411EFA003E29FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		884C2B551D411E48003E29FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884C2B781D411EFA003E29FA /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		884C2B4F1D411E48003E29FA = {
+			isa = PBXGroup;
+			children = (
+				884C2B771D411EFA003E29FA /* CoreLocation.framework */,
+				884C2B5A1D411E48003E29FA /* TBMapzenRouting */,
+				884C2B591D411E48003E29FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		884C2B591D411E48003E29FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				884C2B581D411E48003E29FA /* libTBMapzenRouting.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		884C2B5A1D411E48003E29FA /* TBMapzenRouting */ = {
+			isa = PBXGroup;
+			children = (
+				884C2B641D411E6A003E29FA /* TBMapzenRouting.h */,
+				884C2B651D411E6A003E29FA /* TBMapzenRoutingController.h */,
+				884C2B661D411E6A003E29FA /* TBMapzenRoutingController.m */,
+				884C2B671D411E6A003E29FA /* TBMapzenRoutingPoint.h */,
+				884C2B681D411E6A003E29FA /* TBMapzenRoutingPoint.m */,
+				884C2B691D411E6A003E29FA /* TBMapzenRoutingResult.h */,
+				884C2B6A1D411E6A003E29FA /* TBMapzenRoutingResult.m */,
+				884C2B6B1D411E6A003E29FA /* TBMapzenRoutingResultLeg.h */,
+				884C2B6C1D411E6A003E29FA /* TBMapzenRoutingResultLeg.m */,
+				884C2B6D1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.h */,
+				884C2B6E1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.m */,
+				884C2B6F1D411E6A003E29FA /* TBMapzenRoutingTypes.h */,
+				884C2B701D411E6A003E29FA /* TBMapzenRoutingTypes.m */,
+			);
+			path = TBMapzenRouting;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		884C2B571D411E48003E29FA /* TBMapzenRouting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 884C2B611D411E48003E29FA /* Build configuration list for PBXNativeTarget "TBMapzenRouting" */;
+			buildPhases = (
+				884C2B541D411E48003E29FA /* Sources */,
+				884C2B551D411E48003E29FA /* Frameworks */,
+				884C2B561D411E48003E29FA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TBMapzenRouting;
+			productName = TBMapzenRouting;
+			productReference = 884C2B581D411E48003E29FA /* libTBMapzenRouting.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		884C2B501D411E48003E29FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Trailbehind inc.";
+				TargetAttributes = {
+					884C2B571D411E48003E29FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 884C2B531D411E48003E29FA /* Build configuration list for PBXProject "TBMapzenRouting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 884C2B4F1D411E48003E29FA;
+			productRefGroup = 884C2B591D411E48003E29FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				884C2B571D411E48003E29FA /* TBMapzenRouting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		884C2B541D411E48003E29FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				884C2B721D411E6B003E29FA /* TBMapzenRoutingPoint.m in Sources */,
+				884C2B741D411E6B003E29FA /* TBMapzenRoutingResultLeg.m in Sources */,
+				884C2B711D411E6A003E29FA /* TBMapzenRoutingController.m in Sources */,
+				884C2B761D411E6B003E29FA /* TBMapzenRoutingTypes.m in Sources */,
+				884C2B731D411E6B003E29FA /* TBMapzenRoutingResult.m in Sources */,
+				884C2B751D411E6B003E29FA /* TBMapzenRoutingResultManeuver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		884C2B5F1D411E48003E29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		884C2B601D411E48003E29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		884C2B621D411E48003E29FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		884C2B631D411E48003E29FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		884C2B531D411E48003E29FA /* Build configuration list for PBXProject "TBMapzenRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884C2B5F1D411E48003E29FA /* Debug */,
+				884C2B601D411E48003E29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		884C2B611D411E48003E29FA /* Build configuration list for PBXNativeTarget "TBMapzenRouting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				884C2B621D411E48003E29FA /* Debug */,
+				884C2B631D411E48003E29FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 884C2B501D411E48003E29FA /* Project object */;
+}
