@@ -11,7 +11,6 @@
 @implementation TBMapzenRoutingResult
 
 + (instancetype _Nullable)resultFromResponse:(NSDictionary * _Nonnull)response {
-  DDLogDebug(@"repsonse:%@", response);
   TBMapzenRoutingResult *result = [[TBMapzenRoutingResult alloc] init];
   NSDictionary *trip = response[@"trip"];
   result.length = [trip[@"summary"][@"length"] doubleValue];
