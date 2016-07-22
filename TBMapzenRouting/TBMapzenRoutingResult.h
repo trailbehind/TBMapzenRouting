@@ -12,11 +12,19 @@
 
 @interface TBMapzenRoutingResult : NSObject
 
+/** Estimated elapsed time to complete the trip. */
 @property (nonatomic, assign) CGFloat length;
+
+/** Distance traveled for the entire trip. Units are either miles or kilometers based on the input units specified. */
 @property (nonatomic, assign) CGFloat time;
+
+/** The specified units of length are returned, either kilometers or miles. */
 @property (nonatomic, strong, nullable) NSString *units;
+
+/** The legs of the route. */
 @property (nonatomic, strong, nonnull) NSArray<TBMapzenRoutingResultLeg *> * legs;
 
+/** Create a response object by parsing the JSON returned by the web api. */
 + (instancetype _Nullable)resultFromResponse:(NSDictionary * _Nonnull)response;
 
 @end

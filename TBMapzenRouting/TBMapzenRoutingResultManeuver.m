@@ -8,17 +8,10 @@
 
 #import "TBMapzenRoutingResultManeuver.h"
 
-@interface TBMapzenRoutingResultManeuver ()
-
-@property (nonatomic, strong, nonnull) NSDictionary *data;
-
-@end
-
 @implementation TBMapzenRoutingResultManeuver
 
 + (instancetype _Nullable)maneuverFromDictionary:(NSDictionary * _Nonnull)response {
   TBMapzenRoutingResultManeuver *maneuver = [[TBMapzenRoutingResultManeuver alloc] init];
-  maneuver.data = response;
   
   maneuver.type = [response[@"type"] unsignedLongValue];
   maneuver.instruction = response[@"instruction"];
@@ -45,6 +38,7 @@
   maneuver.verbalMultiCue = response[@"verbal_multi_cue"];
   maneuver.travelMode = response[@"travel_mode"];
   maneuver.travelType = response[@"travel_type"];
+  
   return maneuver;
 }
 

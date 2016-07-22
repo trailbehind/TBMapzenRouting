@@ -51,6 +51,7 @@ typedef NS_ENUM(NSUInteger, TBMapzenRoutingResultManeuverType) {
 
 @interface TBMapzenRoutingResultManeuver : NSObject
 
+/** Create a Maneuver object by parsing an element of the maneuver array of a leg from the server json response. */
 + (instancetype _Nullable)maneuverFromDictionary:(NSDictionary * _Nonnull)response;
 
 /** Type of maneuver. */

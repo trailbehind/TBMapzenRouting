@@ -6,15 +6,9 @@
 //
 //
 
-#import <Foundation/Foundation.h>
-
 #import "TBMapzenRoutingController.h"
 #import "TBMapzenRoutingPoint.h"
 #import "TBMapzenRoutingResult.h"
 #import "TBMapzenRoutingResultLeg.h"
 #import "TBMapzenRoutingResultManeuver.h"
 #import "TBMapzenRoutingTypes.h"
-
-@interface TBMapzenRouting : NSObject
-
-@end
