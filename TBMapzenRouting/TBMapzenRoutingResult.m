@@ -16,6 +16,8 @@
   result.length = [trip[@"summary"][@"length"] doubleValue];
   result.time = [trip[@"summary"][@"time"] doubleValue];
   result.units = trip[@"units"];
+  result.language = trip[@"language"];
+  result.locations = trip[@"locations"];
   
   NSMutableArray <TBMapzenRoutingResultLeg *> *legs = [NSMutableArray arrayWithCapacity:[(NSArray*)trip[@"legs"] count]];
   for(NSDictionary *leg in trip[@"legs"]) {
