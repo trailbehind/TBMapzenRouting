@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TBMapzenRouting"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "Request routes from Mapzen Turn-by-Turn routing service"
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ The Mapzen Turn-by-Turn API makes it easy to let navigation find its way into yo
 
   s.platform     = :ios, "7.0"
 
-  s.source       = { :git => "https://github.com/trailbehind/TBMapzenRouting.git", :tag => "0.1" }
+  s.source       = { :git => "https://github.com/trailbehind/TBMapzenRouting.git", :tag => "0.2" }
 
   s.source_files  = "TBMapzenRouting/*.{h,m,c}"
   s.framework = "CoreLocation"
