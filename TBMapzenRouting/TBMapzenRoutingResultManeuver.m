@@ -35,7 +35,7 @@
   maneuver.arriveInstruction = response[@"arrive_instruction"];
   maneuver.verbalArriveInstruction = response[@"verbal_arrive_instruction"];
   maneuver.transitInfo = response[@"transit_info"];
-  maneuver.verbalMultiCue = response[@"verbal_multi_cue"];
+  maneuver.verbalMultiCue = [response[@"verbal_multi_cue"] boolValue];
   maneuver.travelMode = response[@"travel_mode"];
   maneuver.travelType = response[@"travel_type"];
   
