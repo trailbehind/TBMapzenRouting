@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8823AD81214FFEC90010934E /* TBMapzenRoutingPolylineUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8823AD80214FFEC90010934E /* TBMapzenRoutingPolylineUtils.m */; };
 		884C2B711D411E6A003E29FA /* TBMapzenRoutingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B661D411E6A003E29FA /* TBMapzenRoutingController.m */; };
 		884C2B721D411E6B003E29FA /* TBMapzenRoutingPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B681D411E6A003E29FA /* TBMapzenRoutingPoint.m */; };
 		884C2B731D411E6B003E29FA /* TBMapzenRoutingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 884C2B6A1D411E6A003E29FA /* TBMapzenRoutingResult.m */; };
@@ -29,6 +30,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8823AD7F214FFEC90010934E /* TBMapzenRoutingPolylineUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingPolylineUtils.h; sourceTree = "<group>"; };
+		8823AD80214FFEC90010934E /* TBMapzenRoutingPolylineUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBMapzenRoutingPolylineUtils.m; sourceTree = "<group>"; };
 		884C2B581D411E48003E29FA /* libTBMapzenRouting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTBMapzenRouting.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		884C2B641D411E6A003E29FA /* TBMapzenRouting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRouting.h; sourceTree = "<group>"; };
 		884C2B651D411E6A003E29FA /* TBMapzenRoutingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMapzenRoutingController.h; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				884C2B6E1D411E6A003E29FA /* TBMapzenRoutingResultManeuver.m */,
 				884C2B6F1D411E6A003E29FA /* TBMapzenRoutingTypes.h */,
 				884C2B701D411E6A003E29FA /* TBMapzenRoutingTypes.m */,
+				8823AD7F214FFEC90010934E /* TBMapzenRoutingPolylineUtils.h */,
+				8823AD80214FFEC90010934E /* TBMapzenRoutingPolylineUtils.m */,
 			);
 			path = TBMapzenRouting;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				884C2B721D411E6B003E29FA /* TBMapzenRoutingPoint.m in Sources */,
+				8823AD81214FFEC90010934E /* TBMapzenRoutingPolylineUtils.m in Sources */,
 				884C2B741D411E6B003E29FA /* TBMapzenRoutingResultLeg.m in Sources */,
 				884C2B711D411E6A003E29FA /* TBMapzenRoutingController.m in Sources */,
 				884C2B761D411E6B003E29FA /* TBMapzenRoutingTypes.m in Sources */,
