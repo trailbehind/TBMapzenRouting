@@ -125,6 +125,36 @@
                                     callback:(void (^ _Nonnull)(TBMapzenRoutingResult  * _Nullable result,
                                                                 id _Nullable invalidationToken,
                                                                 NSError * _Nullable error ))callback {
+  return [self requestMapMatchJsonWithLocations:locations
+                                   count:coordinateCount
+                            costingModel:costing
+                                callback:
+   ^(NSData * _Nullable resultData, id  _Nullable invalidationToken, NSError * _Nullable error) {
+     if(error) {
+       dispatch_async(dispatch_get_main_queue(), ^{
+         callback(nil, invalidationToken, error);
+       });
+     } else {
+       NSDictionary *responseDictionary = [NSJSONSerialization JSONObjectWithData:resultData
+                                                                          options:0
+                                                                            error:nil];
+       TBMapzenRoutingResult *result = [TBMapzenRoutingController parseServerResponse:responseDictionary
+                                                                                 task:invalidationToken
+                                                                                error:&error];
+       dispatch_async(dispatch_get_main_queue(), ^{
+         callback(result, invalidationToken, error);
+       });
+     }
+   }];
+}
+
+
+- (id _Nullable)requestMapMatchJsonWithLocations:(CLLocationCoordinate2D* _Nonnull)locations
+                                       count:(NSUInteger)coordinateCount
+                                costingModel:(TBMapzenRoutingCostingModel)costing
+                                    callback:(void (^ _Nonnull)(NSData  * _Nullable resultData,
+                                                                id _Nullable invalidationToken,
+                                                                NSError * _Nullable error ))callback {
   if(coordinateCount < 2) {
     callback(nil, nil, [NSError errorWithDomain:@"TBMapzenRoutingController"
                                            code:0
@@ -180,11 +210,8 @@
                                               userInfo:@{NSLocalizedDescriptionKey: @"response is not a valid json object"}]);
          });
        } else {
-         TBMapzenRoutingResult *result = [TBMapzenRoutingController parseServerResponse:responseDictionary
-                                                                                   task:task
-                                                                                  error:&error];
          dispatch_async(dispatch_get_main_queue(), ^{
-           callback(result, task, error);
+           callback(data, task, error);
          });
        }
      }
