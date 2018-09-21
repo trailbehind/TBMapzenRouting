@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TBMapzenRouting"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "Request routes from Mapzen Turn-by-Turn routing service"
 
   s.description  = <<-DESC
