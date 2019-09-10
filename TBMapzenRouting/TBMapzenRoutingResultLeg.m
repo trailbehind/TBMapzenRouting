@@ -27,14 +27,16 @@
   TBMapzenRoutingResultLeg *leg = [[TBMapzenRoutingResultLeg alloc] init];
   leg.length = [response[@"summary"][@"length"] doubleValue];
   leg.time = [response[@"summary"][@"time"] doubleValue];
-  NSMutableArray *maneuvers = [NSMutableArray arrayWithCapacity:[(NSArray*)response[@"maneuvers"] count]];
-  for(NSDictionary *maneuver in response[@"maneuvers"]) {
-    [maneuvers addObject:[TBMapzenRoutingResultManeuver maneuverFromDictionary:maneuver]];
-  }
-  leg.maneuvers = maneuvers;
   leg.coordinates = [TBMapzenRoutingPolylineUtils decodePolyline:response[@"shape"]
                                              length:&leg->_coordinateCount];
-  
+  NSMutableArray *maneuvers = [NSMutableArray arrayWithCapacity:[(NSArray*)response[@"maneuvers"] count]];
+  for (NSDictionary *maneuverDict in response[@"maneuvers"]) {
+    TBMapzenRoutingResultManeuver *maneuver = [TBMapzenRoutingResultManeuver maneuverFromDictionary:maneuverDict];
+    maneuver.beginCoordinate = leg.coordinates[maneuver.beginShapeIndex];
+    maneuver.endCoordinate = leg.coordinates[maneuver.endShapeIndex];
+    [maneuvers addObject:maneuver];
+  }
+  leg.maneuvers = maneuvers;
   return leg;
 }
 
